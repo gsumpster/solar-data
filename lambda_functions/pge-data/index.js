@@ -22,7 +22,7 @@ exports.myHandler = function (event, context, callback) {
         var options = {
             hostname: 'utilityapi.com',
             port: 443,
-            path: '/api/services/57874/intervals.json?start=' + encodeURIComponent(last_updated),
+            path: '/api/services/<uid>/intervals.json?start=' + encodeURIComponent(last_updated),
             method: 'GET',
             headers: {
                 'Authorization': 'Token <utilityapi-token>'

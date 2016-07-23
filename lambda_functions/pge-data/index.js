@@ -2,7 +2,7 @@
 let https = require('https'),
     mysql = require('mysql');
 
-exports.myHandler = function (event, context, callback) {
+exports.handler = function (event, context, callback) {
     var connection = mysql.createConnection({
         host: 'host',
         user: 'user',
